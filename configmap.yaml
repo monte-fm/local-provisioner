@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: local-volume-config
+data:
+    storageClassMap: |
+        local-sdb1: 
+            hostDir:  /mnt/local-storage/sdb1
+            mountDir: /mnt/local-storage/sdb1
+        local-sdc1:
+            hostDir: /mnt/local-storage/sdc1
+            mountDir: /mnt/local-storage/sdc1
